@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trading Economics Chart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Trading Economics Chart</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <label for="country">Select Country:</label>
+        <select id="country" class="form-select">
+          <option value="Sweden">Sweden</option>
+          <option value="Mexico">Mexico</option>
+          <option value="New Zealand">New Zealand</option>
+          <option value="Thailand">Thailand</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="indicator">Select Indicator:</label>
+        <select id="indicator" class="form-select">
+          <option value="gdp">GDP</option>
+          <option value="inflation">Inflation</option>
+          <option value="population">Population</option>
+        </select>
+      </div>
+    </div>
+    <button id="fetchData" class="btn btn-primary mt-3">Fetch Data</button>
+    <div style="position: relative; height: 400px; width: 100%;">
+        <canvas id="myChart"></canvas>
+    </div>      
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment"></script>  
+  <script src="script.js"></script>
+</body>
+</html>

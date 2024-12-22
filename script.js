@@ -55,7 +55,7 @@ function renderChart(labels, values) {
         x: {
           type: "time", // Specify time axis
           time: {
-            parser: "YYYY-MM-DD", // Adjust the parser based on your date format
+            parser: "2024-12-22",
             tooltipFormat: "MMM YYYY", // Format for tooltips
             unit: "month", // Adjust the unit (e.g., day, month, year) based on data granularity
             displayFormats: {
